@@ -12,6 +12,8 @@ Det finns två olika sätt att designa appliaktionen på, det första sättet by
 * Ladda ner Visual Studio Code [här.](https://code.visualstudio.com/#alt-downloads) Detta program kallas för en IDE (Integrated Developer Environment). Här ska vi skriva våran kod för applikationen.
 * Ladda ner Node JS [här](https://nodejs.org/en/download/), under titeln "Recommended For Most Users". Vi använder Node JS för att kunna skriva kod i React Native.
 
+## Nu börjar vi
+
 ### Steg 1
 
 * Ladda ned ZIP-filen med namnet ...

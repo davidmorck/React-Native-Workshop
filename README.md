@@ -23,8 +23,7 @@ Det finns två olika sätt att designa appliaktionen på, det första sättet by
 ### Steg 2
 
 * Öppna Visual Studio Code
-
-![Klicka på *File* och sedan på *Open folder*](/Images/Capture.PNG)
+* Klicka på *File* och sedan på *Open folder*
+![](/Images/Capture.PNG)
 * Välj mappen som du extraherade ur ZIP-filen och klicka på select folder
-
-![alt text](https://github.com/davidmorck/React-Native-Workshop/tree/master/Images/Capture2.png)
+![](/Images/Capture2.png)

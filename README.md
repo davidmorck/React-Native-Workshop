@@ -16,7 +16,7 @@ Det finns två olika sätt att designa appliaktionen på, det första sättet by
 
 ### Steg 1
 
-* Ladda ned ZIP-filen med namnet ...
+* Klicka på den gröna knappen som säger *Clone or download* och välj download ZIP
 * Extrahera filerna ur zip-filen.
 
 ### Steg 2

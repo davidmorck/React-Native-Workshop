@@ -27,3 +27,7 @@ Det finns två olika sätt att designa appliaktionen på, det första sättet by
 ![](/Images/Capture2.PNG)
 
 * Välj mappen som du extraherade ur ZIP-filen och klicka på select folder
+
+### Steg 3
+
+*

@@ -9,9 +9,9 @@ React native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 Det finns två olika sätt att designa appliaktionen på, det första sättet bygger på att man designar hela appen med hjälp av Javascript. Med det andra sättet designas appen med hjälp av en drag-and-drop-hemsida. Då designas appen med hjälp av färdiga komponenter, men all programmering gällande funktion och kontakt med AWS-databasen görs med hjälp av kod. 
 
 ## Förberedelser
-* Ladda ner **_Visual Studio Code_** [här.](https://code.visualstudio.com/#alt-downloads) Detta program kallas för en IDE (Integrated Developer Environment). Här ska vi skriva våran kod för applikationen.
-* Ladda ner **_Node JS_** [här](https://nodejs.org/en/download/), under titeln "Recommended For Most Users". Vi använder Node JS för att kunna skriva kod i React Native.
-* Ladda ner appen **_expo_** på antingen Android eller IOS. Med hjälp av denna app kommer vi kunna visualisera våran egengjorda app med alla dess funktioner.
+* Ladda ner **Visual Studio Code** [här.](https://code.visualstudio.com/#alt-downloads) Detta program kallas för en IDE (Integrated Developer Environment). Här ska vi skriva våran kod för applikationen.
+* Ladda ner **Node JS** [här](https://nodejs.org/en/download/), under titeln "Recommended For Most Users". Vi använder Node JS för att kunna skriva kod i React Native.
+* Ladda ner appen **expo** på antingen Android eller IOS. Med hjälp av denna app kommer vi kunna visualisera våran egengjorda app med alla dess funktioner.
 
 ## Nu börjar vi
 

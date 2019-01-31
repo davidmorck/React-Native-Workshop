@@ -25,5 +25,5 @@ Det finns två olika sätt att designa appliaktionen på, det första sättet by
 * Öppna Visual Studio Code
 * Klicka på *File* och sedan på *Open folder*
 ![](/Images/Capture.PNG)
-* Välj mappen som du extraherade ur ZIP-filen och klicka på select folder
 ![](/Images/Capture2.PNG)
+* Välj mappen som du extraherade ur ZIP-filen och klicka på select folder

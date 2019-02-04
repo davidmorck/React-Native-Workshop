@@ -11,7 +11,7 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 * Ladda ner **Node JS** [här](https://nodejs.org/en/download/), under titeln "Recommended For Most Users". Vi använder Node JS för att kunna skriva kod i React Native.
 * Ladda ner appen **Expo** på antingen [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US) eller [IOS](https://itunes.apple.com/se/app/expo-client/id982107779?mt=8). Med hjälp av denna app kommer vi kunna visualisera våran egengjorda app med alla dess funktioner.
 
-## Nu börjar vi
+## Workshop
 
 ### Steg 1
 

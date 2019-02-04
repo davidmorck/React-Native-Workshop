@@ -2,7 +2,7 @@
 
 ## Introduktion
 
-I den här workshopen kommer vi använda oss av verktyget React Native för att skapa en mobilapp. I applikationen ska du kunna visa och ändra data från en AWS-databas samtidigt som designen ska vara både stilren och enkel att använda. 
+I den här workshopen kommer vi använda oss av verktyget React Native för att skapa en mobilapp. I applikationen ska du kunna visa från en AWS-databas (Amazon Web Services) samtidigt som designen ska vara både stilren och enkel att använda. 
 
 React Native är ett verktyg som gör det enkelt att göra appar med hjälp av programmeringsspråket Javascript. För att visa appen i telefonen och exportera en färdig app så använder vi oss av Expo. Expo finns som en applikation i mobilen som man enkelt exporterar det man gjort till med hjälp av en QR-kod eller en mail-länk. 
 

@@ -26,6 +26,8 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 
 * Välj mappen som du extraherade ur ZIP-filen och klicka på select folder
 
-### Steg 3
+## Steg 3
 
-*
+* Höger klicka till vänster vid filerna och sedan på "Open in Command Prompt"
+* En Terminal kommer sedan komma upp ner till på skärmen
+* Skriv in "npm install" och låt det ladda klart

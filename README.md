@@ -40,12 +40,122 @@ Nu ska vi börja programmera!
 ### Steg 1
 * Navigera till och öppna Component1.js (app/components/screen1/)
 
-### Steg 2
+### Steg 2 - Knapp
 * Nu ska vi göra en knapp för byta mellan olika screens. 
-* Vi börja med att skriva av koden nedan
+* Skriv av koden nedan:
 ```javascript
 <TouchableOpacity onPress = { () => navigate('Screen2')} style={{width: '100%', height: '100%'}}>
-
+  <Text style={{textAlign: 'center', color: 'white', marginTop: 25, fontSize: 20}}>
+	  Grafer
+	</Text> 
 </TouchableOpacity>
 ```
+* <TouchableOpacity> skapar ett tryckbart objekt i vårt fall en knapp. 
+* Med *onPress* bestämmer vi vad som ska hända när vi klickar på knappen. Vi vill navigera till nästa screen. 
+ 
+ ### Steg 3 - Lägga in en bild
+* Nu ska vi lära oss att lägga in en bild. Vi använder ABB Industrigymnasium loga, men testa gärna med en egen bild. 
+* Koden för att lägga in en bild finns nedan:
+```javascript
+<Image
+  source = {require('./abb.png')}
+  style={{height: 50, width:260}}
+>
+</Image>
+```
+
+* *source* är bildens sökväg och med style bestämmer vi stoleken på bilden. 
+
+### Steg 4 - Screen 2
+* Nu är vi helt klara med screen 1 och det är dags att börja med screen 2. 
+* Navigera till och öppna Component2.js (app/components/screen2/)
+
+### Steg 5 - importera ett biblotek
+* react native har en massor av olika bilbotek (ett biblotek är färdig kod som du kan använda). Vi kommer att använda ett biblotek som heter PureCharts för att visualisera våran data senare. 
+* För att importera det biblotek vi ska använda skriver vi det här vid markeringen i koden
+```javascript
+// LÄGG KODEN FÖR STEG 5 HÄR!
+import PureChart from 'react-native-pure-chart';
+```
+### Steg 6 - variabler
+* Variabler för att spara data. 
+* De variabler vi behöver är temp, humidity och loading. Vi lägger constructor så det ser ut så här:
+```javascript
+constructor(props){
+  super(props);
+  this.state ={
+    temp: [],
+		humidity: [],
+		loading: true
+	}
+}
+```
+### Steg 7 - Hämta data
+#### 7.1
+* Vi börjar med att skapa lokala variabler som endast kommer att användas inom funktionen:
+```javascript
+let self = this;
+var pushArray = []
+var pushArrayHum = []
+```
+* Variablerna kommer vi att använda senare i funktionen.
+#### 7.2
+* Nu ska vi göra en for loop (En for loop kör den bestämda koden x antal gånger) den gör vi under det nyss skrivit:
+```javascript
+for(var i=1; i<20; i++){
+
+}
+```
+* all kod inom {} är de for loopen kör vajre gång. 
+
+#### 7.3
+* Koden som vi ska skriva nu hämtar data från våran AWS backend och lägger in den i våra variabler som vi skapade på steg 6. **Denna kod ska läggas i for loopens {}**
+```javascript
+fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorkshopLambda?id='+i, 
+			{method: 'GET'}	)
+				.then((response) => response.json())
+				.then((responseJson) => {
+					
+					
+					pushArray.push({x: responseJson.location, y: Math.abs(responseJson.temperature)});
+					pushArrayHum.push({x: responseJson.location, y: responseJson.humidity});
+					console.log(pushArrayHum);
+					self.setState({temp: pushArray, humidity: pushArrayHum});
+					
+				})
+				.catch((error) => {
+					console.error(error);
+				});
+		}
+		this.sleep(3500).then(()=>{
+			this.setState({loading: false});
+		});
+```
+* Nu kan vi hämta data och nästa steg blir då att visualisera den.
+
+### Steg 8 - grafer
+* Vi kommer att ha två grafer för temperatur och luftfuktighet. Som vi nämde innan så använder vi bibloteket PureCharts. 
+* Koden är väldigt enkel och ser ut så här:
+Temperatur
+```javascript
+<Text style={{textAlign: 'center' }}>Temperatur</Text>
+
+<PureChart data={this.state.temp} 
+type={'line'} 
+showEvenNumberXaxisLabel={false}
+/>
+```
+Luftfuktighet
+```javascript
+<Text style={{textAlign: 'center' }}>Luftfuktighet</Text>
+
+<PureChart data={this.state.humidity} 
+type={'line'} 
+showEvenNumberXaxisLabel={false}
+/>
+```
+
+
+
+
 

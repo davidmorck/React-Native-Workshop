@@ -13,6 +13,9 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 
 # Workshop
 
+* I filerna så står det vart ni ska skriv koden från stegen
+* Om det är något ni fastnar på eller vill ha mer förklarat säg till någon av oss!
+
 ## Installera
 
 ### Steg 1
@@ -85,9 +88,9 @@ constructor(props){
   super(props);
   this.state ={
     temp: [],
-		humidity: [],
-		loading: true
-	}
+    humidity: [],
+    loading: true
+    }
 }
 ```
 ### Steg 7 - Hämta data
@@ -112,30 +115,31 @@ for(var i=1; i<20; i++){
 * Koden som vi ska skriva nu hämtar data från våran AWS backend och lägger in den i våra variabler som vi skapade på steg 6. **Denna kod ska läggas i for loopens {}**
 ```javascript
 fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorkshopLambda?id='+i, 
-			{method: 'GET'}	)
-				.then((response) => response.json())
-				.then((responseJson) => {
+	{method: 'GET'}	)
+	.then((response) => response.json())
+	.then((responseJson) => {
+	
+		pushArray.push({x: responseJson.location, y: Math.abs(responseJson.temperature)});
+		pushArrayHum.push({x: responseJson.location, y: responseJson.humidity});
+		console.log(pushArrayHum);
+		self.setState({temp: pushArray, humidity: pushArrayHum});
 					
-					
-					pushArray.push({x: responseJson.location, y: Math.abs(responseJson.temperature)});
-					pushArrayHum.push({x: responseJson.location, y: responseJson.humidity});
-					console.log(pushArrayHum);
-					self.setState({temp: pushArray, humidity: pushArrayHum});
-					
-				})
-				.catch((error) => {
-					console.error(error);
-				});
-		}
-		this.sleep(3500).then(()=>{
-			this.setState({loading: false});
+		})
+			.catch((error) => {
+			console.error(error);
 		});
+		}
+			this.sleep(3500).then(()=>{
+			this.setState({loading: false});
+
+});
 ```
 * Nu kan vi hämta data och nästa steg blir då att visualisera den.
 
 ### Steg 8 - grafer
 * Vi kommer att ha två grafer för temperatur och luftfuktighet. Som vi nämde innan så använder vi bibloteket PureCharts. 
 * Koden är väldigt enkel och ser ut så här:
+
 Temperatur
 ```javascript
 <Text style={{textAlign: 'center' }}>Temperatur</Text>
@@ -154,7 +158,33 @@ type={'line'}
 showEvenNumberXaxisLabel={false}
 />
 ```
+* Nu är vi klara med koden till appen
 
+## Öppna Appen
+
+### Steg 1
+* Skriv in "npm install" i terminalen
+* När appen har starta så kommer du att få upp en meny som ser ut såhär:
+
+![](/Images/CaptureCMD.PNG)
+
+* Har du en telefon med en QR läsare klicka "q" (Du som inte har QR läsare gå vidare till steg 2)
+* Läs in QR koden på din telefon (Du kanske behöver förstora terminalen så att hela QR koden syns)
+* Se till att appen lyckas starta på din telefon
+
+### Steg 2 (För dig som inte har QR läsare)
+
+* Klicka "s" i samma meny
+* Skriv in din E-mail **VIKTIGT** Se till att du kan nå din mail på telefon
+* Klicka enter
+* Du kommer sedan få ett mail av expo öppna det i din telefon
+* Klicka på den översta länken och Expo appen kommer att öppnas
+* Se till så att allt laddas in
+* Du har ny en fungerande app
+
+###  Steg 4
+* Grattis du har nu en fungerande app. 
+* Om du vill och har tid över så kan du försöka att modifiera koden tex ändra färger, text storlek osv
 
 
 

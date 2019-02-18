@@ -28,6 +28,12 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 
 ## Steg 3
 
-* Högerklicka under filerna och välj sedan "Open in Command Prompt"
+* Klicka *Ctrl + ö* 
 * En textruta kommer att komma upp längst ner på skärmen. Denna ruta kallas "terminalen".
 * Skriv in "npm install" i terminalen och vänta tills alla filer har laddats ned.
+
+
+```javascript
+var s = 'hej';
+alert(s);
+```

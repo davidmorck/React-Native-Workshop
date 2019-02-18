@@ -125,12 +125,12 @@ fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorks
 		self.setState({temp: pushArray, humidity: pushArrayHum});
 					
 		})
-			.catch((error) => {
-			console.error(error);
+		.catch((error) => {
+		console.error(error);
 		});
 		}
-			this.sleep(3500).then(()=>{
-			this.setState({loading: false});
+		this.sleep(3500).then(()=>{
+		this.setState({loading: false});
 
 });
 ```
@@ -163,7 +163,7 @@ showEvenNumberXaxisLabel={false}
 ## Öppna Appen
 
 ### Steg 1
-* Skriv in "npm install" i terminalen
+* Skriv in "npm start" i terminalen
 * När appen har starta så kommer du att få upp en meny som ser ut såhär:
 
 ![](/Images/CaptureCMD.PNG)

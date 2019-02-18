@@ -11,7 +11,9 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 * Ladda ner **Node JS** [här](https://nodejs.org/en/download/), under titeln "Recommended For Most Users". Vi använder Node JS för att kunna skriva kod i React Native.
 * Ladda ner appen **Expo** på antingen [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US) eller [IOS](https://itunes.apple.com/se/app/expo-client/id982107779?mt=8). Med hjälp av denna app kommer vi kunna se och använda våran egengjorda app med alla dess funktioner.
 
-## Workshop
+# Workshop
+
+## Installera
 
 ### Steg 1
 
@@ -26,14 +28,24 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 
 * Välj mappen som du extraherade ur ZIP-filen och klicka på select folder
 
-## Steg 3
+### Steg 3
 
 * Klicka *Ctrl + ö* 
 * En textruta kommer att komma upp längst ner på skärmen. Denna ruta kallas "terminalen".
 * Skriv in "npm install" i terminalen och vänta tills alla filer har laddats ned.
 
+## Programmering
+Nu ska vi börja programmera!
 
+### Steg 1
+* Navigera till och öppna Component1.js (app/components/screen1/)
+
+### Steg 2
+* Nu ska vi göra en knapp för byta mellan olika screens. 
+* Vi börja med att skriva av koden nedan
 ```javascript
-var s = 'hej';
-alert(s);
+<TouchableOpacity onPress = { () => navigate('Screen2')} style={{width: '100%', height: '100%'}}>
+
+</TouchableOpacity>
 ```
+

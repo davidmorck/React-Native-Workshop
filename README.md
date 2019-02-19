@@ -40,7 +40,7 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 ## Programmering
 Nu ska vi börja programmera!
 
-### Steg 1
+### Steg 1 - Öppna filen
 * Navigera till och öppna filen Component1.js (app/components/screen1/)
 
 ### Steg 2 - Knapp
@@ -75,14 +75,14 @@ Nu ska vi börja programmera!
 * Nu är vi helt klara med screen 1 och det är dags att börja med screen 2. 
 * Navigera till och öppna filen Component2.js (app/components/screen2/)
 
-### Steg 5 - importera ett bibliotek
+### Steg 5 - Iportera ett bibliotek
 * React Native har en massa olika bibliotek (ett bibliotek är färdig kod som du kan använda). Vi kommer att använda ett bibliotek som heter PureCharts för att visualisera våran data senare med hjälp av grafer. 
 * För att importera det bibliotek vi ska använda skriver vi det här vid markeringen i koden
 ```javascript
 // LÄGG KODEN FÖR STEG 5 HÄR!
 import PureChart from 'react-native-pure-chart';
 ```
-### Steg 6 - variabler
+### Steg 6 - Variabler
 * Variabler för att spara data. 
 * De variabler vi behöver är temp, humidity och loading. En 'constructor' i React Native är platsen där man anger sina variabler som man ska använda senare i koden:
 ```javascript
@@ -141,7 +141,7 @@ fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorks
 * Det som händer i denna kodsnutt är att vi först och främst kallar vår API (webbadress) för att hämta datan från databasen. Sedan lägger vi in alla värden i de två *array* variablerna som vi skapade förut. Efter det så lägger vi in *array* variablerna i våra *constructor* variabler.
 * Nu kan vi hämta data och nästa steg blir då att visualisera den.
 
-### Steg 8 - grafer
+### Steg 8 - Grafer
 * Vi kommer att ha två grafer, en för temperatur och en för luftfuktighet. Som vi nämde innan så använder vi biblioteket PureCharts för att skapa graferna. 
 * Koden är väldigt enkel och ser ut så här:
 
@@ -180,12 +180,12 @@ showEvenNumberXaxisLabel={false}
 ### Steg 2 (För dig som inte har QR läsare)
 
 * Klicka "s" i samma meny
-* Skriv in din E-mail **VIKTIGT** Se till att du kan nå din mail på telefon
+* Skriv in din E-mail **VIKTIGT** Se till att du kan nå din mail på din telefon
 * Klicka enter
-* Du kommer sedan få ett mail av expo öppna det i din telefon
+* Du kommer sedan få ett mail av Expo. Öppna det i din telefon
 * Klicka på den översta länken och Expo appen kommer att öppnas
-* Se till så att allt laddas in
-* Du har ny en fungerande app
+* Se till att allt laddas in
+* Du har nu en fungerande app
 
 ###  Steg 4
 * Grattis, du har nu en fungerande app. 

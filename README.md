@@ -39,13 +39,15 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 
 ## Programmering
 Nu ska vi börja programmera!
+* Vi rekommenderar att ni skriver av koden istället för att kopiera den, då lär ni er mer!
+* Vid varje kodsnutt så tar ni bort hela raden där det står "KOD FÖR STEG x".
 
 ### Steg 1 - Öppna filen
 * Navigera till och öppna filen Component1.js (app/components/screen1/)
 
 ### Steg 2 - Knapp
 * Nu ska vi göra en knapp för byta mellan olika screens. 
-* Ta bort hela raden där det står "KOD FÖR STEG 2" och skriv av kodan nedan:
+* Skriv av kodan nedan:
 ```javascript
 <TouchableOpacity onPress = { () => navigate('Screen2')} style={{width: '100%', height: '100%'}}>
   <Text style={{textAlign: 'center', color: 'white', marginTop: 25, fontSize: 20}}>
@@ -190,7 +192,7 @@ showEvenNumberXaxisLabel={false}
 ###  Steg 4
 * Grattis, du har nu en fungerande app. 
 * Om du vill och har tid över så kan du försöka att modifiera koden genom att t.ex. ändra färger, textstorlek osv.
-* ***Fråga oss gärna om hjälp!***
+* ***Fråga oss gärna om hjälp om du har svårigheter med något av momenten eller om du undrar hur saker fungerar!***
 
 
 

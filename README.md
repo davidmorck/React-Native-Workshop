@@ -43,7 +43,7 @@ Nu ska vi börja programmera!
 * Vid varje kodsnutt så tar ni bort hela raden där det står "KOD FÖR STEG x".
 
 ### Steg 1 - Öppna filen
-* Navigera till och öppna filen Component1.js (app/components/screen1/)
+* Navigera till mappen *workshop_app* och öppna filen Component1.js (workshop_app/app/components/screen1/)
 
 ### Steg 2 - Knapp
 * Nu ska vi göra en knapp för byta mellan olika screens. 

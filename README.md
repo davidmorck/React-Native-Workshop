@@ -58,7 +58,7 @@ Nu ska vi börja programmera!
 * *Testa att byta färg på texten genom att skriva t.ex. 'black', istället för 'white'.*
  
  ### Steg 3 - Lägga in en bild
-* Nu ska vi lära oss att lägga in en bild. Vi använder ABB Industrigymnasium loga, men testa gärna med en egen bild. 
+* Nu ska vi lära oss att lägga in en bild. Vi använder ABB Industrigymnasiums logga. 
 * Koden för att lägga in en bild finns nedan:
 ```javascript
 <Image
@@ -69,21 +69,22 @@ Nu ska vi börja programmera!
 ```
 
 * *source* är bildens sökväg och med style bestämmer vi stoleken på bilden. 
+* *Testa att byta bild genom att lägga in din egna .png fil i mappen 'screen1'. Ändra därefter texten inuti 'source' i koden till './DINBILDSNAMN.png'*
 
 ### Steg 4 - Screen 2
 * Nu är vi helt klara med screen 1 och det är dags att börja med screen 2. 
-* Navigera till och öppna Component2.js (app/components/screen2/)
+* Navigera till och öppna filen Component2.js (app/components/screen2/)
 
-### Steg 5 - importera ett biblotek
-* react native har en massor av olika bilbotek (ett biblotek är färdig kod som du kan använda). Vi kommer att använda ett biblotek som heter PureCharts för att visualisera våran data senare. 
-* För att importera det biblotek vi ska använda skriver vi det här vid markeringen i koden
+### Steg 5 - importera ett bibliotek
+* React Native har en massa olika bibliotek (ett bibliotek är färdig kod som du kan använda). Vi kommer att använda ett bibliotek som heter PureCharts för att visualisera våran data senare med hjälp av grafer. 
+* För att importera det bibliotek vi ska använda skriver vi det här vid markeringen i koden
 ```javascript
 // LÄGG KODEN FÖR STEG 5 HÄR!
 import PureChart from 'react-native-pure-chart';
 ```
 ### Steg 6 - variabler
 * Variabler för att spara data. 
-* De variabler vi behöver är temp, humidity och loading. Vi lägger constructor så det ser ut så här:
+* De variabler vi behöver är temp, humidity och loading. En 'constructor' i React Native är platsen där man anger sina variabler som man ska använda senare i koden:
 ```javascript
 constructor(props){
   super(props);
@@ -96,24 +97,26 @@ constructor(props){
 ```
 ### Steg 7 - Hämta data
 #### 7.1
-* Vi börjar med att skapa lokala variabler som endast kommer att användas inom funktionen:
+* Vi börjar med att skapa lokala variabler som endast kommer att användas inom funktionen *GettingData*:
 ```javascript
 let self = this;
 var pushArray = []
 var pushArrayHum = []
 ```
-* Variablerna kommer vi att använda senare i funktionen.
+* Variablerna kommer vi att använda senare inom funktionen.
+* I JavaScript deklarerar man en variabel genom *var*. När man avslutar en variabel med *[]* betyder det att variabeln är en så kallad *array*. I en array kan vi spara flera än ett värde.
 #### 7.2
-* Nu ska vi göra en for loop (En for loop kör den bestämda koden x antal gånger) den gör vi under det nyss skrivit:
+* Nu ska vi göra en *for-loop* (En *for-loop* kör den bestämda koden x antal gånger). Den placerar vi under koden vi nyss skrivit:
 ```javascript
 for(var i=1; i<20; i++){
 
 }
 ```
-* all kod inom {} är de for loopen kör vajre gång. 
+* all kod inom {} körs av loopen.
 
 #### 7.3
-* Koden som vi ska skriva nu hämtar data från våran AWS backend och lägger in den i våra variabler som vi skapade på steg 6. **Denna kod ska läggas i for loopens {}**
+* Koden som vi ska skriva nu hämtar data från våran AWS backend och lägger in den i våra *constructor-variabler* som vi skapade på steg 6. 
+* **Denna kod ska läggas i for-loopen**
 ```javascript
 fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorkshopLambda?id='+i, 
 	{method: 'GET'}	)
@@ -135,13 +138,14 @@ fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorks
 
 });
 ```
+* Det som händer i denna kodsnutt är att vi först och främst kallar vår API (webbadress) för att hämta datan från databasen. Sedan lägger vi in alla värden i de två *array* variablerna som vi skapade förut. Efter det så lägger vi in *array* variablerna i våra *constructor* variabler.
 * Nu kan vi hämta data och nästa steg blir då att visualisera den.
 
 ### Steg 8 - grafer
-* Vi kommer att ha två grafer för temperatur och luftfuktighet. Som vi nämde innan så använder vi bibloteket PureCharts. 
+* Vi kommer att ha två grafer, en för temperatur och en för luftfuktighet. Som vi nämde innan så använder vi biblioteket PureCharts för att skapa graferna. 
 * Koden är väldigt enkel och ser ut så här:
 
-Temperatur
+Temperatur:
 ```javascript
 <Text style={{textAlign: 'center' }}>Temperatur</Text>
 
@@ -150,7 +154,7 @@ type={'line'}
 showEvenNumberXaxisLabel={false}
 />
 ```
-Luftfuktighet
+Luftfuktighet:
 ```javascript
 <Text style={{textAlign: 'center' }}>Luftfuktighet</Text>
 
@@ -159,7 +163,7 @@ type={'line'}
 showEvenNumberXaxisLabel={false}
 />
 ```
-* Nu är vi klara med koden till appen
+* Nu är vi klara med koden till appen!
 
 ## Öppna Appen
 
@@ -184,8 +188,9 @@ showEvenNumberXaxisLabel={false}
 * Du har ny en fungerande app
 
 ###  Steg 4
-* Grattis du har nu en fungerande app. 
-* Om du vill och har tid över så kan du försöka att modifiera koden tex ändra färger, text storlek osv
+* Grattis, du har nu en fungerande app. 
+* Om du vill och har tid över så kan du försöka att modifiera koden genom att t.ex. ändra färger, textstorlek osv.
+* ***Fråga oss gärna om hjälp!***
 
 
 

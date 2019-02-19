@@ -54,7 +54,8 @@ Nu ska vi börja programmera!
 </TouchableOpacity>
 ```
 * <TouchableOpacity> skapar ett tryckbart objekt, i vårt fall en knapp. 
-* Med *onPress* bestämmer vi vad som ska hända när vi klickar på knappen. Vi vill navigera till nästa skärm så vi skriver *"navigate('Screen2')"*
+* Med *onPress* bestämmer vi vad som ska hända när vi klickar på knappen. Vi vill navigera till nästa skärm så vi skriver *"navigate('Screen2')"*.
+* *Testa att byta färg på texten genom att skriva t.ex. 'black', istället för 'white'.*
  
  ### Steg 3 - Lägga in en bild
 * Nu ska vi lära oss att lägga in en bild. Vi använder ABB Industrigymnasium loga, men testa gärna med en egen bild. 

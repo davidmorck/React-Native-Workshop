@@ -41,11 +41,11 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 Nu ska vi börja programmera!
 
 ### Steg 1
-* Navigera till och öppna Component1.js (app/components/screen1/)
+* Navigera till och öppna filen Component1.js (app/components/screen1/)
 
 ### Steg 2 - Knapp
 * Nu ska vi göra en knapp för byta mellan olika screens. 
-* Skriv av koden nedan:
+* Ta bort hela raden där det står "KOD FÖR STEG 2" och skriv av kodan nedan:
 ```javascript
 <TouchableOpacity onPress = { () => navigate('Screen2')} style={{width: '100%', height: '100%'}}>
   <Text style={{textAlign: 'center', color: 'white', marginTop: 25, fontSize: 20}}>
@@ -53,8 +53,8 @@ Nu ska vi börja programmera!
 	</Text> 
 </TouchableOpacity>
 ```
-* <TouchableOpacity> skapar ett tryckbart objekt i vårt fall en knapp. 
-* Med *onPress* bestämmer vi vad som ska hända när vi klickar på knappen. Vi vill navigera till nästa screen. 
+* <TouchableOpacity> skapar ett tryckbart objekt, i vårt fall en knapp. 
+* Med *onPress* bestämmer vi vad som ska hända när vi klickar på knappen. Vi vill navigera till nästa skärm så vi skriver *"navigate('Screen2')"*
  
  ### Steg 3 - Lägga in en bild
 * Nu ska vi lära oss att lägga in en bild. Vi använder ABB Industrigymnasium loga, men testa gärna med en egen bild. 

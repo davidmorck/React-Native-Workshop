@@ -137,6 +137,7 @@ fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorks
 		}
 		this.sleep(3500).then(()=>{
 		this.setState({loading: false});
+		}
 
 });
 ```

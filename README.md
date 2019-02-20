@@ -77,7 +77,7 @@ Nu ska vi börja programmera!
 * Nu är vi helt klara med screen 1 och det är dags att börja med screen 2. 
 * Navigera till och öppna filen Component2.js (app/components/screen2/)
 
-### Steg 5 - Iportera ett bibliotek
+### Steg 5 - Importera ett bibliotek
 * React Native har en massa olika bibliotek (ett bibliotek är färdig kod som du kan använda). Vi kommer att använda ett bibliotek som heter PureCharts för att visualisera våran data senare med hjälp av grafer. 
 * För att importera det bibliotek vi ska använda skriver vi det här vid markeringen i koden
 ```javascript

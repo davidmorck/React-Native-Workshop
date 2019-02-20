@@ -26,7 +26,7 @@ React Native är ett verktyg som gör det enkelt att göra appar med hjälp av p
 ### Steg 2
 
 * Öppna Visual Studio Code
-* Klicka på *File* och sedan på *Open folder* och välj flar_app foldern.
+* Klicka på *File* och sedan på *Open folder* och välj workshop_app foldern.
 ![](/Images/Capture2.PNG)
 
 * Välj mappen som du extraherade ur ZIP-filen och klicka på select folder

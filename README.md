@@ -137,9 +137,10 @@ fetch('https://itw1249n66.execute-api.us-east-1.amazonaws.com/default/ReactWorks
 		}
 		this.sleep(3500).then(()=>{
 		this.setState({loading: false});
-		}
+		});
+}
 
-});
+
 ```
 * Det som händer i denna kodsnutt är att vi först och främst kallar vår API (webbadress) för att hämta datan från databasen. Sedan lägger vi in alla värden i de två *array* variablerna som vi skapade förut. Efter det så lägger vi in *array* variablerna i våra *constructor* variabler.
 * Nu kan vi hämta data och nästa steg blir då att visualisera den.
